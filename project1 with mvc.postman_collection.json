@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "2054eb80-aa3f-48fa-9ea5-d3083ab39a9e",
+		"name": "project1 with mvc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/getdata",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getdata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"id\": \"203\",\n      \"name\": \"Understanding programming through recursion\",\n      \"logo\": \"http://bit.do/recursion-png\",\n      \"notes\": null,\n      \"days_to_complete\": \"45\",\n      \"short_description\": \"Iss course ko hum use kar kar recursions aur programming ki depth mei jayenge.\",\n      \"type\": \"html\",\n      \"course_type\": null,\n      \"lang_available\": [\n         \"en\"\n      ]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/postdata1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"postdata1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{     \"id\": \"53\",\n      \"name\": \"kirtee patil\",\n      \"logo\": \"http://bit.do/recursion-png\",\n      \"notes\": null,\n      \"days_to_complete\": \"45\",\n      \"short_description\": \"Iss course ko hum use kar kar recursions aur programming ki depth mei jayenge.\",\n      \"type\": \"html\",\n      \"course_type\": null,\n      \"lang_available\": [\n         \"en\"\n      ]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/putdata/53",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"putdata",
+						"53"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/deletedata/53",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"deletedata",
+						"53"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
